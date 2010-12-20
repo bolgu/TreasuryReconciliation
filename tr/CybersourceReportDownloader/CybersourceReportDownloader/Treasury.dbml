@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="Treasury" Class="TreasuryDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CORDEVSQL27;Initial Catalog=Treasury;Integrated Security=True" SettingsObjectName="CybersourceReportDownloader.Properties.Settings" SettingsPropertyName="TreasuryConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_ActivityLog" Member="ActivityLogs">
+    <Type Name="ActivityLog">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="logger" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="method_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="application_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="message" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_CybersourceGatewayMerchantConfig" Member="CybersourceGatewayMerchantConfigs">
+    <Type Name="CybersourceGatewayMerchantConfig">
+      <Column Name="CybersourceGatewayMerchantConfigID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CybersourceGatewayProcessorID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MerchantId" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="ProfileName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IgnoreCVResult" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Level2or3Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_CybersourceGatewayTranDownloadTracking" Member="CybersourceGatewayTranDownloadTrackings">
+    <Type Name="CybersourceGatewayTranDownloadTracking">
+      <Column Name="CybersourceGatewayTranDownloadTracking_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MerchantId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ReportDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FileName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="isDownLoadSuccess" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="NewPasswordSet" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_STG_CybersourceTransactions" Member="STG_CybersourceTransactions">
+    <Type Name="STG_CybersourceTransaction">
+      <Column Name="STG_CybersourceTransactions_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Row_descriptor" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="FileName" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

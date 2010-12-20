@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "LoadPPILog", "LoadPPILog\LoadPPILog.dtproj", "{2A9F8AB0-5FD2-4F6B-A861-CF41B6C69B57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A9F8AB0-5FD2-4F6B-A861-CF41B6C69B57}.Development|Default.ActiveCfg = Development
+		{2A9F8AB0-5FD2-4F6B-A861-CF41B6C69B57}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

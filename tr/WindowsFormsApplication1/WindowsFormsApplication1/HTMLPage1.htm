@@ -1,0 +1,194 @@
+﻿
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<html lang="en">
+<head>
+  
+	<title>Cybersource Business Center - Login</title>
+  
+	<link rel="stylesheet" type="text/css" href="/ebc/css/login/login.css;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4">
+  <script type="text/javascript">
+
+      var pageOrgId;
+      function orgDisplayChange() {
+          var orgCookieDiv = document.getElementById("orgcookiediv");
+          var orgFieldDiv = document.getElementById("orgfielddiv");
+          if (pageOrgId) {
+              orgCookieDiv.style.display = "";
+              orgFieldDiv.style.display = "none";
+              document.forms[0].elements["username"].focus();
+              document.forms[0].elements["organizationId"].value = pageOrgId;
+          } else {
+              orgCookieDiv.style.display = "none";
+              orgFieldDiv.style.display = "";
+              document.forms[0].elements["organizationId"].focus();
+              document.forms[0].elements["organizationId"].select();
+          }
+      }
+      function initialOrganizationSetup() {
+          pageOrgId = "";
+          var orgCookieDiv = document.getElementById("orgcookiediv");
+          var orgFieldDiv = document.getElementById("orgfielddiv");
+          if (pageOrgId) {
+              orgCookieDiv.style.display = "";
+              orgFieldDiv.style.display = "none";
+              document.forms[0].elements["username"].focus();
+              document.forms[0].elements["organizationId"].value = pageOrgId;
+          } else {
+              orgCookieDiv.style.display = "none";
+              orgFieldDiv.style.display = "";
+              document.forms[0].elements["organizationId"].focus();
+          }
+
+      }
+      function changeOrgId() {
+          pageOrgId = null;
+          orgDisplayChange();
+      }
+
+      function get_cookie(cookie_name) {
+          var results = document.cookie.match(cookie_name + '=(.*?)(;|$)');
+          if (results)
+              return (unescape(results[1]));
+          else
+              return null;
+      }
+
+      function delete_cookie(cookie_name) {
+          if (get_cookie(cookie_name)) {
+              document.cookie = cookie_name + "=" + get_cookie(cookie_name) + "; expires=Thu, 01-Jan-1970 00:00:01 GMT";
+          }
+      }
+
+  </script>
+</head>
+<body onLoad="initialOrganizationSetup();">
+<form name="LoginForm" method="post" action="/ebc/login/LoginProcess.do;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="98%">
+  <tr>
+    <td align="center" valign="middle">
+      <table cellpadding="0" cellspacing="0" border="0" width="610">
+        <tr>
+          <td align="left">
+            <img src="/ebc/images/login/loginLogo.png;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4" height="40" width="182" alt="CyberSource Corporation">
+            <table cellpadding="0" cellspacing="0" border="0" width="610" height="356" background="/ebc/images/login/loginBgr.png;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4">
+              <tr>
+                <!-- left nav start -->
+                <td align="left" valign="top" width="180">
+                  <table cellpadding="0" cellspacing="0" border="0" width="180">
+                    <tr>
+                      <td width="24">&nbsp;</td>
+                      <td width="156"><br><br></td>
+                    </tr>
+                    <tr>
+                      <td nowrap colspan="2"><img src="/ebc/images/login/spacer.gif;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4" width="5">LOGIN</td>
+                    </tr>
+                    <tr><td colspan="2" height="7"><img src="/ebc/images/login/spacer.gif;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4" height="7" width="180" border="0"></td></tr>
+                    <tr valign="center">
+                      
+                        
+                          <td nowrap><img src="/ebc/images/login/spacer.gif;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4" height="5" width="6"><img src="/ebc/images/login/dots_right.gif;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4" height="12" width="8" border="0" hspace="5" alt=""></td>
+                          <td class="leftnavitem-selected">Live Business Center</td>
+                        
+                        
+                      
+                    </tr>
+                    <tr><td colspan="2" height="7"><img src="/ebc/images/login/spacer.gif;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4" height="7" width="180" border="0"></td></tr>
+                    <tr valign="center">
+                      
+                        
+                        
+                          <td></td>
+                          <td><a class="leftnavitem" href="https://ebctest.cybersource.com/ebctest">Test Business Center</a></td>
+                        
+                      
+                    </tr>
+                    <tr valign="bottom">
+                      <td></td>
+                      <td><br><br><b>Note</b>: Your Merchant ID may have been pre-populated. The User Name required is the same one that you have always used to enter the Business Center. For most users, your Merchant ID and User Name are the same.<br><br></td>
+                    </tr>
+                  </table>
+                </td>
+                <!-- left nav end -->
+                <td align="center" valign="middle">
+                  <table cellpadding="0" cellspacing="10" border="0">
+                    <tr>
+                      <td colspan="2" class="pagetitle">Business Center Login</td>
+                    </tr>
+                    <tr><td colspan="2"></td></tr>
+                    <tr>
+                      <td align="right" class="b">CyberSource Merchant ID</td>
+                      <td>
+                        <div id="orgcookiediv">&nbsp;&nbsp;&nbsp;(<a href="#" onclick="changeOrgId()">change</a>)
+                        </div>
+                        <div id="orgfielddiv"><input type="text" name="organizationId" size="20" value=""></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="right" class="b">User Name</td>
+                      <td><input type="text" name="username" size="20" value=""></td>
+                    </tr>
+                    <tr>
+                      <td align="right" class="b">Password</td>
+                      <td><input type="password" name="password" value=""></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="submit" value="Login"></td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                      <td colspan="2">
+                        Forgot your password? Click <a href="/ebc/login/ForgotPassword.do;jsessionid=DAA9E9D6A28638C38421530C7FCAB1D4">here</a>.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        If you are a CyberSource Reseller, please click
+                        <a href="https://partnerportal.cybersource.com/sbc/sbc_login.jsp">here</a></td>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<input type="hidden" name="alreadyVisited" value="true">
+</form>
+<script type="text/javascript" language="JavaScript">
+  <!--
+    var focusControl = document.forms["LoginForm"].elements["username"];
+
+    if (focusControl.type != "hidden" && !focusControl.disabled) {
+        focusControl.focus();
+    }
+  // -->
+</script>
+
+<!-- Build: ubc_10sepr2-8p1-4 -->
+</body>
+</html>

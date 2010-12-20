@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="ePaymentsConfig" Class="EpaymentsConfigDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=corsqlepy;Initial Catalog=ePaymentsConfig;Integrated Security=True" SettingsObjectName="CybersourceReportDownloader.Properties.Settings" SettingsPropertyName="ePaymentsConfigConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CybersourceGatewayMerchantConfig" Member="CybersourceGatewayMerchantConfigurations">
+    <Type Name="CybersourceGatewayMerchantConfiguration">
+      <Column Name="CybersourceGatewayMerchantConfigID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CybersourceGatewayProcessorID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MerchantId" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="ProfileName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IgnoreCVResult" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Level2or3Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

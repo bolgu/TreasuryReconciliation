@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EpaymentsConfig">
+  <DataContextMoniker Name="/EpaymentsConfigDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9a30d793-e7e1-40aa-a54c-bb8a7fbdc4f5" absoluteBounds="3.125, 1.75, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/EpaymentsConfigDataContext/CybersourceGatewayMerchantConfiguration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e73822c9-afcb-44e9-aa6e-0a54888de8dc" absoluteBounds="3.14, 2.21, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

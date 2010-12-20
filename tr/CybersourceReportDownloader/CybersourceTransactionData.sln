@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4259F4F2-7AF3-4D69-BC26-F0DD1FA6A752}"
+	ProjectSection(SolutionItems) = preProject
+		PasswordChanger.vsmdi = PasswordChanger.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CybersourceReportDownloader", "CybersourceReportDownloader\CybersourceReportDownloader.csproj", "{990E22C3-1160-4CF0-96E3-BDBCB3973C56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordChanger", "PasswordChanger\PasswordChanger\PasswordChanger.csproj", "{8C9F94FB-94D7-480C-8A65-EE6AFDA7FAA7}"
+EndProject
+Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "CybersourceTransactionStagingImport", "CybersourceTransactionsStagingImport\CybersourceTransactionStagingImport.dtproj", "{84D3ABAC-FF31-4B68-8CA1-68504B93AB39}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PasswordChanger.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{990E22C3-1160-4CF0-96E3-BDBCB3973C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990E22C3-1160-4CF0-96E3-BDBCB3973C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990E22C3-1160-4CF0-96E3-BDBCB3973C56}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{990E22C3-1160-4CF0-96E3-BDBCB3973C56}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{990E22C3-1160-4CF0-96E3-BDBCB3973C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990E22C3-1160-4CF0-96E3-BDBCB3973C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9F94FB-94D7-480C-8A65-EE6AFDA7FAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9F94FB-94D7-480C-8A65-EE6AFDA7FAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9F94FB-94D7-480C-8A65-EE6AFDA7FAA7}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9F94FB-94D7-480C-8A65-EE6AFDA7FAA7}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{8C9F94FB-94D7-480C-8A65-EE6AFDA7FAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9F94FB-94D7-480C-8A65-EE6AFDA7FAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D3ABAC-FF31-4B68-8CA1-68504B93AB39}.Debug|Any CPU.ActiveCfg = Development
+		{84D3ABAC-FF31-4B68-8CA1-68504B93AB39}.Debug|Any CPU.Build.0 = Development
+		{84D3ABAC-FF31-4B68-8CA1-68504B93AB39}.Development|Any CPU.ActiveCfg = Development
+		{84D3ABAC-FF31-4B68-8CA1-68504B93AB39}.Development|Any CPU.Build.0 = Development
+		{84D3ABAC-FF31-4B68-8CA1-68504B93AB39}.Release|Any CPU.ActiveCfg = Development
+		{84D3ABAC-FF31-4B68-8CA1-68504B93AB39}.Release|Any CPU.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

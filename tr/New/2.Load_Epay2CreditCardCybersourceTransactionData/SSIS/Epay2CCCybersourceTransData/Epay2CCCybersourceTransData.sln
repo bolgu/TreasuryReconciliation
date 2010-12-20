@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "Epay2CCCybersourceTransData", "Epay2CCCybersourceTransData\Epay2CCCybersourceTransData.dtproj", "{AD683C5D-08A6-4A05-A9A1-F1A29D26F43D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD683C5D-08A6-4A05-A9A1-F1A29D26F43D}.Development|Default.ActiveCfg = Development
+		{AD683C5D-08A6-4A05-A9A1-F1A29D26F43D}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
